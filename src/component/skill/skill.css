@@ -1,0 +1,38 @@
+.cube {
+  perspective: 1200px;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+}
+.face {
+  width: 550px; /* Personaliza el ancho */
+  height: 115.5px; /* Personaliza la altura */
+  width: 15em;
+  height: 5em;
+  border-radius: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #3d3c3d;
+  cursor: pointer;
+  transition: all 450ms ease-in-out;
+  border: none;
+  margin: 10px 10px 10px 10px;
+}
+
+.face:hover {
+  background: linear-gradient(0deg, #abe6ed, #16a8f0);
+  box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
+    inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2),
+    0px 0px 0px 4px rgba(232, 239, 242, 0.2), 0px 0px 180px 0px #17e4ff;
+  transform: translateY(-2px);
+}
+
+.icon {
+  max-width: 100%;
+  height: auto;
+}
