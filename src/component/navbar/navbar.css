@@ -1,0 +1,166 @@
+.ui-btn {
+  --btn-default-bg: #010314;
+  --btn-padding: 10px 15px;
+  --btn-hover-bg: rgb(51, 51, 51);
+  --btn-transition: 0.3s;
+  --btn-letter-spacing: 0.1rem;
+  --btn-animation-duration: 1.2s;
+  --btn-shadow-color: rgba(0, 0, 0, 0.137);
+  --btn-shadow: 0 2px 10px 0 var(--btn-shadow-color);
+  --hover-btn-color: #17e4ff;
+  --default-btn-color: #fff;
+  --font-size: 16px;
+  --font-weight: 600;
+  --font-family: Menlo, Roboto Mono, monospace;
+}
+
+.ui-btn {
+  box-sizing: border-box;
+  padding: var(--btn-padding);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--default-btn-color);
+  font: var(--font-weight) var(--font-size) var(--font-family);
+  background: var(--btn-default-bg);
+  transition: var(--btn-transition);
+  overflow: hidden;
+  box-shadow: var(--btn-shadow);
+  border-radius: 10px;
+  border: 2px solid #2a2b3a;
+}
+
+.ui-btn:hover {
+  background: var(--btn-default-bg);
+  box-shadow: 0px 0px 10px 0px #17e4ff;
+  border: 2px solid #abe6ed;
+}
+
+.ui-btn input,
+.ui-btn textarea {
+  color: black;
+}
+
+@property --border-angle-1 {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0deg;
+}
+
+@property --border-angle-2 {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 90deg;
+}
+
+@property --border-angle-3 {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 180deg;
+}
+
+/* sRGB color. */
+:root {
+  --bright-blue: rgb(0, 100, 255);
+  --bright-green: rgb(0, 208, 255);
+  --bright-red: rgb(255, 0, 0);
+  --background: black;
+  --foreground: white;
+  --border-size: 2px;
+  --border-radius: 0.75em;
+  --btn-padding: 10px 15px;
+}
+
+/* Display-P3 color, when supported. */
+@supports (color: color(display-p3 1 1 1)) {
+  :root {
+    --bright-blue: color(display-p3 0 1 4);
+    --bright-green: color(display-p3 0 1 1);
+    --bright-red: color(display-p3 0 0 1);
+  }
+}
+
+@keyframes rotateBackground {
+  to {
+    --border-angle-1: 360deg;
+  }
+}
+
+@keyframes rotateBackground2 {
+  to {
+    --border-angle-2: -270deg;
+  }
+}
+
+@keyframes rotateBackground3 {
+  to {
+    --border-angle-3: 540deg;
+  }
+}
+
+button {
+  --border-angle-1: 0deg;
+  --border-angle-2: 90deg;
+  --border-angle-3: 180deg;
+  box-sizing: border-box;
+  padding: 1px;
+  margin-top: 30px;
+  height: 60px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--default-btn-color);
+  font: var(--font-weight) var(--font-size) var(--font-family);
+  background: var(--btn-default-bg);
+  transition: var(--btn-transition);
+  overflow: hidden;
+  box-shadow: var(--btn-shadow);
+  border-radius: 10px;
+  border: 1px solid #2a2b3a;
+  background-image: conic-gradient(
+      from var(--border-angle-1) at 10% 15%,
+      transparent,
+      var(--bright-blue) 10%,
+      transparent 30%,
+      transparent
+    ),
+    conic-gradient(
+      from var(--border-angle-2) at 70% 60%,
+      transparent,
+      var(--bright-green) 10%,
+      transparent 60%,
+      transparent
+    ),
+    conic-gradient(
+      from var(--border-angle-3) at 50% 20%,
+      transparent,
+      var(--bright-red) 10%,
+      transparent 50%,
+      transparent
+    );
+  animation: rotateBackground 3s linear infinite,
+    rotateBackground2 8s linear infinite, rotateBackground3 13s linear infinite;
+}
+button:hover {
+  background: var(--btn-default-bg);
+  box-shadow: 0px 0px 10px 0px #17e4ff;
+  border: 2px solid #abe6ed;
+}
+
+/* Change this background to transparent to see how the gradient works */
+button div {
+  overflow: hidden;
+  background: var(--background);
+  padding: 1em 1.5em;
+  border-radius: calc(var(--border-radius) - var(--border-size));
+  color: var(--foreground);
+  width: 100%; /* Añadida propiedad width: 100% para que se ajuste al contenedor */
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Aspekta";
+  font-weight: normal;
+  src: url("https://assets.codepen.io/240751/Aspekta-300.woff2") format("woff2");
+}

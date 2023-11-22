@@ -1,11 +1,19 @@
 import React from "react";
 import Navbar from "../component/navbar/navbar.jsx";
 import Skill from "@/component/skill/skill.jsx";
-import Proyect from "@/component/proyect/proyect.jsx";
+import Proyects from "@/component/proyects/proyects.jsx";
+import Clock from "@/component/relog/relog.jsx";
+import About from "@/component/about/about.jsx";
+import Contac from "@/component/contac/contac.jsx";
+import Botton from "@/component/botton/botton.jsx";
 
 function Page() {
   return (
     <div>
+      <div>
+        <Clock />
+      </div>
+
       <div
         style={{
           marginTop: "40px", // Márgen superior
@@ -34,11 +42,43 @@ function Page() {
       <div style={{ margin: "250px 10px 60px" }}>
         <img src="/skill.png" alt="Image 3" className="w-36 h-auto ml-40" />
       </div>
-      <div>
+      <div id="Skill">
         <Skill />
       </div>
-      <div>
-        <Proyect />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <div style={{ margin: "250px 10px 60px" }}>
+        <img src="/about.png" alt="Image 3" className="w-36 h-auto ml-40" />
+      </div>
+
+      <div
+        id="About"
+        style={{
+          marginTop: "20px", // Márgen superior
+          marginBottom: "20px", // Márgen inferior
+          marginLeft: "680px", // Márgen izquierdo
+          marginRight: "20px", // Márgen derecho
+          padding: 0,
+          listStyle: "none",
+        }}
+      >
+        <About />
+      </div>
+      <div style={{ margin: "250px 10px 60px" }}>
+        <img src="/pro.png" alt="Image 3" className="w-36 h-auto ml-40" />
+      </div>
+      <div id="Proyects">
+        <Proyects />
+      </div>
+      <div style={{ margin: "250px 10px 60px" }}>
+        <img src="/cont.png" alt="Image 3" className="w-36 h-auto ml-40" />
+      </div>
+      <div id="Contact">
+        <Contac />
       </div>
       <Navbar />
     </div>

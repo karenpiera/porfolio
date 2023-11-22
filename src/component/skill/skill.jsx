@@ -5,7 +5,7 @@ function Skill() {
   return (
     <div className="cube  ">
       <div className="row">
-        <div className="face ">
+        <div className="face">
           <img src="/icons/icon1.png" alt="Icon 1" className="icon" />
         </div>
         <div className="face">
