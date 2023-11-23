@@ -36,11 +36,6 @@
   border: 2px solid #abe6ed;
 }
 
-.ui-btn input,
-.ui-btn textarea {
-  color: black;
-}
-
 @property --border-angle-1 {
   syntax: "<angle>";
   inherits: true;

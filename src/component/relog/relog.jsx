@@ -49,8 +49,8 @@ const Clock = () => {
       //   justifyContent: "center",
       // }}
     >
-      <p class="date">{date}</p>
-      <p class="time">{time}</p>
+      <p className="date">{date}</p>
+      <p className="time">{time}</p>
     </div>
   );
 };

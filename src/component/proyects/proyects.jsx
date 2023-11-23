@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./proyects.css";
 import "@fortawesome/fontawesome-free/css/all.css";
+import "./proyects.css";
 
 function Proyectos() {
   const videos = [
