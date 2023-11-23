@@ -46,15 +46,14 @@ function Contac() {
   };
   return (
     <div
-    // style={{
-    //   margin: "100px 150px 100px 550px",
-    //   width: "352px",
-    //   height: "352px",
-    //   display: "flex",
-    //   flexDirection: "column",
-    //   alignItems: "center",
-    // }}
-    // className="ui-btn"
+      style={{
+        margin: "100px 150px 100px 400px",
+        width: "852px",
+        height: "452px",
+        display: "flex",
+        alignItems: "center",
+      }}
+      // className="ui-btn"
     >
       <section className="form_wrap">
         <section className="cantact_info">

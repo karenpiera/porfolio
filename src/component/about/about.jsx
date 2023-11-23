@@ -4,15 +4,16 @@ export default function About() {
   return (
     <div
       style={{
-        margin: "100px 50px 400px -300px",
-        width: "852px",
-        height: "352px",
+        margin: "100px 50px 100px -400px",
+        width: "1052px",
+        height: "552px",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        lineHeight: "1.5",
+        lineHeight: "1.8",
+        fontSize: "21px",
       }}
-      className="ui-btn leading-relaxed bg-#010314 hover:bg-rgb(51, 51, 51) transition-0.3s overflow-hidden shadow-0 2 10 0 rgba-0 0 0 0.137 rounded-10 border-2 border-#2a2b3a"
+      className="ui-btn "
     >
       <p>
         ¡Saludos desde el emocionante mundo de la programación! Soy una

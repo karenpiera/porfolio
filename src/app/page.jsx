@@ -39,7 +39,7 @@ function Page() {
         <br />
         <img src="/dev1.png" alt="Image 2" className="w-240 h-auto" />
       </div>
-      <div style={{ margin: "250px 10px 60px" }}>
+      <div style={{ margin: "320px 10px 60px " }}>
         <img src="/skill.png" alt="Image 3" className="w-36 h-auto ml-40" />
       </div>
       <div id="Skill">

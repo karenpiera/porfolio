@@ -43,11 +43,11 @@ function Proyectos() {
   const VideoCard = ({ video }) => (
     <div
       style={{
-        display: "flex",
+        margin: "100px 150px 100px 350px",
+
         flexDirection: "column",
         alignItems: "center",
-        margin: "100px 50px 100px 400px",
-        width: "852px",
+        width: "952px",
         height: "552px",
         position: "relative",
       }}

@@ -123,7 +123,13 @@ const Navbar = () => {
       {showArrow && (
         <button
           onClick={scrollToTop}
-          // className="ui-btn box-border p-15 20 flex items-center justify-center text-white font-semibold text-16px font-mono bg-#010314 cursor-pointer transition-0.3s overflow-hidden shadow-0 2 10 0 rgba-0 0 0 0.137 rounded-10 border-2 border-#2a2b3a"
+          className="ui-btn arrow-btn"
+          style={{
+            fontSize: "25px", // Ajusta el tamaño de la fuente
+            padding: "5px",
+            height: "35px",
+            width: "25px",
+          }}
         >
           ↑
         </button>
