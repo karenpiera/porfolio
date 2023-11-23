@@ -14,23 +14,30 @@ function Contac() {
 
     try {
       const templateParams = {
-        to_name: "Karen", // Nombre del destinatario
-        from_name: name, // Nombre del remitente
+        to_name: "Karen",
+        from_name: name,
         from_email: email,
         mensaje: message,
       };
 
-      await emailjs.send(
+      const response = await emailjs.send(
         "service_si8jrt9",
         "template_n0dxwjl",
         templateParams,
         "s3TKQzcoiIaChHMj_"
       );
 
-      console.log("Email sent successfully");
+      if (response && response.status === 200) {
+        alert("Message sent succesfully");
+      } else {
+        alert("Error sending message. ");
+        alert("Try other means of communication.");
+      }
     } catch (error) {
       console.error("Error sending email:", error);
-      console.error("EmailJSResponseStatus:", error?.status, error?.text);
+      alert(
+        "Error al enviar el mensaje. Pruebe con otros medios de comunicación."
+      );
     }
 
     setEmail("");
