@@ -5,9 +5,7 @@ import Proyects from "@/component/proyects/proyects.jsx";
 import Clock from "@/component/relog/relog.jsx";
 import About from "@/component/about/about.jsx";
 import Contac from "@/component/contac/contac.jsx";
-import Botton from "@/component/botton/botton.jsx";
 import "./page.css";
-import Redes from "@/component/redes-contact/redes.jsx";
 
 function Page() {
   return (
@@ -30,10 +28,10 @@ function Page() {
       </div>
       <div
         style={{
-          marginTop: "20px", // Márgen superior
-          marginBottom: "20px", // Márgen inferior
-          marginLeft: "680px", // Márgen izquierdo
-          marginRight: "20px", // Márgen derecho
+          marginTop: "20px",
+          marginBottom: "20px",
+          marginLeft: "680px",
+          marginRight: "20px",
           padding: 0,
           listStyle: "none",
         }}
