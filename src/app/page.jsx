@@ -6,6 +6,7 @@ import Clock from "@/component/relog/relog.jsx";
 import About from "@/component/about/about.jsx";
 import Contac from "@/component/contac/contac.jsx";
 import Botton from "@/component/botton/botton.jsx";
+import "./page.css";
 
 function Page() {
   return (
@@ -16,7 +17,7 @@ function Page() {
 
       <div
         style={{
-          marginTop: "40px", // Márgen superior
+          marginTop: "180px", // Márgen superior
           marginBottom: "20px", // Márgen inferior
           marginLeft: "180px", // Márgen izquierdo
           marginRight: "20px", // Márgen derecho
@@ -24,7 +25,7 @@ function Page() {
           listStyle: "none",
         }}
       >
-        <img src="/K.png" alt="Image 1" className="w-240 h-auto" />
+        <img src="/K.png" alt="Image 1" className="w-240 h-auto icon2" />
       </div>
       <div
         style={{
@@ -37,7 +38,7 @@ function Page() {
         }}
       >
         <br />
-        <img src="/dev1.png" alt="Image 2" className="w-240 h-auto" />
+        <img src="/dev1.png" alt="Image 2" className="w-240  icon2 " />
       </div>
       <div style={{ margin: "320px 10px 60px " }}>
         <img src="/skill.png" alt="Image 3" className="w-36 h-auto ml-40" />

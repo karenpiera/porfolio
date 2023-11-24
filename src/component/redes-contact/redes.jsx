@@ -1,7 +1,7 @@
 import React from "react";
 
 function Redes() {
-  return <div>Redes</div>;
+  return;
 }
 
 export default Redes;

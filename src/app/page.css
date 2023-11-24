@@ -38,3 +38,11 @@
     background-position: 0% 50%;
   }
 } */
+
+.icon2 {
+  max-width: 100%;
+  height: auto;
+}
+.icon2:hover {
+  box-shadow: 10px 0px 380px 0px #17e4ff;
+}
