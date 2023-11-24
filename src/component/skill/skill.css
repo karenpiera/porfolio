@@ -1,6 +1,6 @@
 .Cubo {
   margin: auto;
-  width: 400px; /* Ajusta el tamaño del cubo según sea necesario */
+  width: 400px;
   height: 400px;
   transform-style: preserve-3d;
   transition: transform 0.5s ease;

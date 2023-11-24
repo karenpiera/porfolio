@@ -1,11 +1,8 @@
 "use client";
-import React, { useState, useEffect } from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import React, { useState } from "react";
+
 import "./proyects.css";
 import "@fortawesome/fontawesome-free/css/all.css";
-import "./proyects.css";
 
 function Proyectos() {
   const videos = [
@@ -47,7 +44,7 @@ function Proyectos() {
 
         flexDirection: "column",
         alignItems: "center",
-        width: "952px",
+        width: "852px",
         height: "552px",
         position: "relative",
       }}
