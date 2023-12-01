@@ -4,7 +4,7 @@ export default function About() {
   return (
     <div
       style={{
-        margin: "100px 50px 100px -400px",
+        margin: "100px 50px 100px -430px",
         width: "1052px",
         height: "552px",
         display: "flex",

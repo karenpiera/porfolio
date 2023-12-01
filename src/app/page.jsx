@@ -6,6 +6,7 @@ import Clock from "@/component/relog/relog.jsx";
 import About from "@/component/about/about.jsx";
 import Contac from "@/component/contac/contac.jsx";
 import "./page.css";
+import Redes from "@/component/redes/redes.jsx";
 
 function Page() {
   return (
@@ -79,6 +80,12 @@ function Page() {
       </div>
       <div id="Contact">
         <Contac />
+      </div>
+      <div style={{ margin: "250px 10px 60px" }}>
+        <img src="/SOCIAL.png" alt="Image 3" className="w-36 h-auto ml-40" />
+      </div>
+      <div id="Redes">
+        <Redes />
       </div>
       <Navbar />
     </div>

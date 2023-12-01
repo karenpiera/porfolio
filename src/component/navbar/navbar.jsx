@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import "./navbar.css";
+import Redes from "../redes/redes";
 
 const Navbar = () => {
   const [showArrow, setShowArrow] = useState(false);
@@ -116,6 +117,20 @@ const Navbar = () => {
           >
             <button>
               <div>Contact Me</div>
+            </button>{" "}
+          </li>
+          <li
+            // className="ui-btn"
+            onClick={() =>
+              document.getElementById("Redes").scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+                inline: "nearest",
+              })
+            }
+          >
+            <button>
+              <div>Social</div>
             </button>{" "}
           </li>
         </ul>

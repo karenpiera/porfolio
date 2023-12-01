@@ -47,7 +47,7 @@ function Contac() {
   return (
     <div
       style={{
-        margin: "100px 150px 100px 400px",
+        margin: "100px 150px 100px 350px",
         width: "852px",
         height: "452px",
         display: "flex",
