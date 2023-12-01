@@ -178,3 +178,32 @@ button div {
   font-weight: normal;
   src: url("https://assets.codepen.io/240751/Aspekta-300.woff2") format("woff2");
 }
+/* navbar.css */
+/* ... Otros estilos */
+
+/* Estilos para dispositivos pequeños */
+@media (max-width: 768px) {
+  .hamburger-btn {
+    display: block;
+  }
+
+  .logo {
+    display: block;
+  }
+
+  .logo.hide {
+    display: none;
+  }
+
+  .menu {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .menu.show {
+    display: flex;
+    flex-direction: column;
+  }
+}

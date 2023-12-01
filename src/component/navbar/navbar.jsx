@@ -5,6 +5,7 @@ import Redes from "../redes/redes";
 
 const Navbar = () => {
   const [showArrow, setShowArrow] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -28,6 +29,9 @@ const Navbar = () => {
       behavior: "smooth",
     });
   };
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   return (
     <div>
@@ -40,6 +44,7 @@ const Navbar = () => {
           padding: "10px",
           backgroundColor: "black",
         }}
+        className={`navbar-container ${isMenuOpen ? "menu-open" : ""}`}
       >
         <img
           src="/kp.png"
@@ -51,7 +56,10 @@ const Navbar = () => {
           }}
         />
 
-        <ul style={{ cursor: "pointer" }}>
+        <ul
+          style={{ cursor: "pointer" }}
+          className={`menu ${isMenuOpen ? "show" : ""}`}
+        >
           <li
             // className="ui-btn box-border p-15 20 flex items-center justify-center text-white font-semibold text-16px font-mono bg-#010314 cursor-pointer transition-0.3s overflow-hidden shadow-0 2 10 0 rgba-0 0 0 0.137 rounded-10 border-2 border-#2a2b3a"
             onClick={() =>
